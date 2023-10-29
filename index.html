@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Reloj</title>
+</head>
+
+<body>
+    <i class="fa-solid fa-bars" id="navbar-icon" onclick="toggleNavbar();"></i>
+    <ul class="navbar">
+        <li class="nav-item">
+            <a class="nav-link" id="reloj-link">
+                <span class="icon"><i class="icon fas fa-clock"></i></span>
+                <span class="text">Reloj</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cronometro-link">
+                <span class="icon"><i class="icon fas fa-stopwatch"></i></span>
+                <span class="text">Cronómetro</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="temporizador-link">
+                <span class="icon"><i class="icon fas fa-hourglass-start"></i></span>
+                <span class="text">Temporizador</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="contenedor hora">
+        <div class="contenedor-hora">
+            <div class="circle-progress"></div>
+            <h1 id="fecha">Fecha</h1>
+            <h1 id="hora">Hora</h1>
+        </div>
+    </div>
+
+    <div class="contenedor cronometro">
+        <div class="contenedor-cronometro">
+            <div class="square-progress"></div>
+            <div class="square-progress2"></div>
+            <h1 id="cronometro">00:00:00.00</h1>
+            <p>Horas:Minutos:Segundos.Milisegundos</p>
+            <div class="botones">
+                <button class="btn btnIniciar" title="Boton iniciar"><span><i class="fas fa-play"></i></span></button>
+                <button class="btn btnDetener" title="Boton detener"><span><i class="fas fa-stop"></i></span></button>
+                <button class="btn btnReiniciar" title="Boton reiniciar"><span><i
+                            class="fas fa-redo"></i></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor temporizador">
+        <div class="contenedor-temporizador">
+            <div class="card-temporizador animated-border">
+                <div class="circular-progress1">
+                </div>
+                <h1 id="temporizador1"></h1>
+                <div class="botones">
+                    <button class="btn btnIniciar" id="iniciar1" title="Boton iniciar"><span><i
+                                class="fas fa-play"></i></span></button>
+                    <button class="btn btnDetener" id="detener1" title="Boton detener"><span><i
+                                class="fas fa-stop"></i></span></button>
+                    <button class="btn btnReiniciar" id="reiniciar1" title="Boton reiniciar"><span><i
+                                class="fas fa-redo"></i></span></button>
+                </div>
+            </div>
+            <div class="card-temporizador">
+                <div class="circular-progress2">
+                </div>
+                <h1 id="temporizador2"></h1>
+                <div class="botones">
+                    <button class="btn btnIniciar" id="iniciar2" title="Boton iniciar"><span><i
+                                class="fas fa-play"></i></span></button>
+                    <button class="btn btnDetener" id="detener2" title="Boton detener"><span><i
+                                class="fas fa-stop"></i></span></button>
+                    <button class="btn btnReiniciar" id="reiniciar2" title="Boton reiniciar"><span><i
+                                class="fas fa-redo"></i></span></button>
+                </div>
+            </div>
+            <div class="card-temporizador">
+                <div class="circular-progress3">
+                </div>
+                <h1 id="temporizador3"></h1>
+                <div class="botones">
+                    <button class="btn btnIniciar" id="iniciar3" title="Boton iniciar"><span><i
+                                class="fas fa-play"></i></span></button>
+                    <button class="btn btnDetener" id="detener3" title="Boton detener"><span><i
+                                class="fas fa-stop"></i></span></button>
+                    <button class="btn btnReiniciar" id="reiniciar3" title="Boton reiniciar"><span><i
+                                class="fas fa-redo"></i></span></button>
+                </div>
+            </div>
+            <div class="card-temporizador">
+                <div class="circular-progress4">
+                </div>
+                <h1 id="temporizador4"></h1>
+                <div class="botones">
+                    <button class="btn btnIniciar" id="iniciar4" title="Boton iniciar"><span><i
+                                class="fas fa-play"></i></span></button>
+                    <button class="btn btnDetener" id="detener4" title="Boton detener"><span><i
+                                class="fas fa-stop"></i></span></button>
+                    <button class="btn btnReiniciar" id="reiniciar4" title="Boton reiniciar"><span><i
+                                class="fas fa-redo"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
